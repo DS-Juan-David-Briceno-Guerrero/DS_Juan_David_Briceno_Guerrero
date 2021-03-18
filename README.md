@@ -6,8 +6,7 @@ The modelling of real life situations throught mathematical approaches awes me s
 natural attenuation, and health diseases treatment. Additionaly, I find fascinating topics that involves neuroscience, the study of the brain, 
 and artificial intelligence.
 
-- 💞️ I began my serious immersion on the data world around the year 2019. For this reason, I consider myself a junior Scientist progressing in
-the field day after day. I hope my site contributions are going to be helpful for your current projects, as well as, with the understanding of 
+- 💞️ I hope my site contributions are going to be helpful for your current projects, as well as, with the understanding of 
 concepts and best practices in machine learning to resolve specific kind of problems.
 
 - 📫 How to reach me ... you can contact me by email at : nb03briceno@gmail.com.
