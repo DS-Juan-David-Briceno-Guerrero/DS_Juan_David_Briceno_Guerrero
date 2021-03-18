@@ -6,8 +6,8 @@ The modelling of real life situations throught mathematical approaches awes me s
 natural attenuation, and health diseases treatment. Additionaly, I find fascinating topics that involves neuroscience, the study of the brain, 
 and artificial intelligence.
 
-- 💞️ I hope my site contributions are going to be helpful for your current projects, as well as, with the understanding of 
-concepts and best practices in machine learning to resolve specific kind of problems.
+- 💞️ I hope my site contributions are going to be helpful for your current projects as well as the understanding of 
+concepts and common practices in machine learning to resolve specific kinds of problems.
 
 - 📫 How to reach me ... you can contact me by email at : nb03briceno@gmail.com.
 Don't hesite to search me if you have any doubt. If you are wondering to collab on a kaggle or simiar competition, you already have a teamate, 
