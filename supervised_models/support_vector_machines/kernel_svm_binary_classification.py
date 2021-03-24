@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from adspy_shared_utilities import plot_class_regions_for_classifier_subplot
 from sklearn.preprocessing import MinMaxScaler
-from adspy_shared_utilities import plot_class_regions_for_classifier
+from adspy_shared_utilities import plot_class_regions_for_classifierX_train_scaled
 
 #2.Creating a synthetic dataset to do binary classification using KSVM.
 #A two dimensional plot is shown with the results of the target value as color points, 
