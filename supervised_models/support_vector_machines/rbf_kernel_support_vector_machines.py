@@ -56,7 +56,7 @@ for this_gamma, this_axis in zip([0.01, 1, 5], subaxes):
 #5.Working over a real dataframe.
 #Applying KSVM to a real life data set.
 #df of the brest and cancer dataframe.
-df = pd.read_csv('/home/juan-david/Documents/data_science/travail_personnel/machine_learning_michigan_university/data_breast_cancer_dataset.csv')
+df = pd.read_csv('breast_cancer_dataset.csv')
 
 print (df.head(3))
 print("df shape :" +str(df.shape))
