@@ -8,9 +8,7 @@ import seaborn as sn
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.datasets import load_breast_cancer
 from matplotlib.colors import ListedColormap
-from adspy_shared_utilities import load_crime_dataset
 from sklearn.preprocessing import MinMaxScaler
 np.set_printoptions(precision=2)
 
