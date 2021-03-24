@@ -99,7 +99,7 @@ results_test = []
 classifiers = []
 
 for c in [0.1, 1,50, 100]:
-    clf = LogisticRegression(C=c).fit(X_train, y_train)
+    clf = LogisticRegression(C=c)
     val_train = clf.score(X_train, y_train)
     val_test = clf.score(X_test, y_test)
     results_train.append(val_train)
@@ -113,3 +113,4 @@ best_classifier = classifiers[results_test.index(best_test_result)]
 print("Training set accuracy :"+ str(best_train_result))
 print("Test set accuracy :"+ str(best_test_result))
 print(best_classifier.get_params(deep=True))
+
