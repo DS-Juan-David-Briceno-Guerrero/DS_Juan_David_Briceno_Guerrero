@@ -17,7 +17,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 #2.Import the dataset of fruits.
 #The exercise works with a linear classifier for this reason two features are selected in order to perform the training.
-fruits = pd.read_csv('fruit_data_with_colors.txt',delimiter = "\t")
+fruits = pd.read_csv('/home/juan-david/Documents/data_science/travail_personnel/machine_learning_michigan_university/fruit_data_with_colors.txt',delimiter = "\t")
 print(fruits.head(5))
 
 feature_names_fruits = ['height', 'width', 'mass', 'color_score']
@@ -43,10 +43,10 @@ results_train = []
 results_test = []
 classifiers = []
 
-c_range = [0.001, 0.01, 0.1, 1,5,10, 15,30,50,75,100, 250,500]
+c_range = [0.001, 0.01, 0.05,0.1, 1,5,10, 15,30,50,75,100, 250,500]
 
 for i in c_range:
-    clf = LinearSVC(C=i, random_state = 67).fit(X_train_scaled, y_train)
+    clf = LinearSVC(C=i).fit(X_train_scaled, y_train)
     val_train = clf.score(X_train_scaled, y_train)
     val_test = clf.score(X_test_scaled, y_test)
     results_train.append(val_train)
@@ -63,6 +63,8 @@ print(clf.get_params(deep=True))
 
 
 #5.predicting the value for a fruit with height =2, and width 6.
+print('')
+print('Prediction the classification for a fruit with height =2, and width 6')
 #After evaluating the dot product between the model parameters(coeficients and weights), the biggest result gives us the answer about the classification for the evaluated inputs.
 results_coe = clf.coef_
 results_intercepts = clf.intercept_
@@ -84,29 +86,7 @@ print(result_all_classes)
 prediction_result = clf.predict([x_test_fruit])
 print("The classification throught the classifier is: "+str(prediction_result[0]))
 
-#6.Plot the boundary of the linear classifier with SVM.
-#Plotting the boundary desicions for each SVM model run on the multiclass classification task.
-plt.figure(figsize=(6,6))
-colors = ['r', 'g', 'b', 'y']
-cmap_fruits = ListedColormap(['#FF0000', '#00FF00', '#0000FF','#FFFF00'])
 
-plt.scatter(X_fruits_2d[['height']], X_fruits_2d[['width']],
-           c=y_fruits_2d, cmap=cmap_fruits, edgecolor = 'black', alpha=.7)
 
-x_0_range = np.linspace(-10, 15)
 
-for w, b, color in zip(clf.coef_, clf.intercept_, ['r', 'g', 'b', 'y']):
-    # Since class prediction with a linear model uses the formula y = w_0 x_0 + w_1 x_1 + b, 
-    # and the decision boundary is defined as being all points with y = 0, to plot x_1 as a 
-    # function of x_0 we just solve w_0 x_0 + w_1 x_1 + b = 0 for x_1:
-    plt.plot(x_0_range, -(x_0_range * w[0] + b) / w[1], c=color, alpha=.8)
-
-plt.legend(target_names_fruits)
-plt.xlabel('height')
-plt.ylabel('width')
-plt.xlim(-2, 12)
-plt.ylim(-2, 15)
-plt.show()
-
-print("The overall accuracy of the classification done with LSVM is: "+str(clf.score(X_test, y_test)) )
 
