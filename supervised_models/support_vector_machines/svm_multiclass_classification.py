@@ -17,7 +17,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 #2.Import the dataset of fruits.
 #The exercise works with a linear classifier for this reason two features are selected in order to perform the training.
-fruits = pd.read_csv('/home/juan-david/Documents/data_science/travail_personnel/machine_learning_michigan_university/fruit_data_with_colors.txt',delimiter = "\t")
+fruits = pd.read_csv('fruit_data_with_colors.txt',delimiter = "\t")
 print(fruits.head(5))
 
 feature_names_fruits = ['height', 'width', 'mass', 'color_score']
