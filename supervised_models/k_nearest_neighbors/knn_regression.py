@@ -30,7 +30,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_R1, y_R1, random_state = 0
 
 #4.Training a generic model.
 #There is only one feature and for that reason there is not scaling part in this example.
-knnreg = KNeighborsRegressor(n_neighbors = 5).fit(X_train, y_train)
+knnreg = KNeighborsRegressor(n_neighbors = 2).fit(X_train, y_train)
 print('R-squared training score: {:.3f}'
      .format(knnreg.score(X_train, y_train)))
 print('R-squared test score: {:.3f}'
