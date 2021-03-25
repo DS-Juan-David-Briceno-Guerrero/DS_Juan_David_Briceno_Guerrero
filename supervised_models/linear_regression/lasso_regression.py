@@ -1,5 +1,5 @@
 #.Welcome to this Machine Learning lesson.
-#.This exercise aims to demonstrate how to apply a lasso regression for a regression problem.
+#.This exercise aims to demonstrate how to apply a Lasso regression for a regression problem.
 #.The exercise uses a linear regression classifier with L1 penalty to in the weights to address the prediction problem.
 
 #1.Import libraries.
