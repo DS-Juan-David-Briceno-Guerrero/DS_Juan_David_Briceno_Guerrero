@@ -1,4 +1,7 @@
-
+#.Welcome to this Machine Learning lesson.
+#.This exercise aims to demonstrate how to build a neural network the address a problem of regression mixing categorical and real variables.
+#The methodology of NPL is used to make embedding layers that process the categories of each categorical variable.
+#The model uses the tensorflow keras API.
 
 #Tensorflow must be at least the version 2.o
 import tensorflow as tf
