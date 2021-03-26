@@ -1,3 +1,7 @@
+#.Welcome to this Machine Learning lesson.
+#.This exercise aims to demonstrate how to build a neural network with L-layers in order to address a binary classification problem.
+#.The model uses [LINEAR->RELU] functions of activation for the (L-1) layers, and a final sigmoid activation function in the last neuron to predict.[>LINEAR->SIGMOID].
+
 #Construction d'un modele de reseau de neurons pour afficher la reconnaisance de chats.
 import inspect
 import numpy as np
