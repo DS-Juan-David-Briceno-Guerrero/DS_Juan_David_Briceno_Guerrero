@@ -192,7 +192,7 @@ print ("ones = " + str(ones([3])))
 #5.Developpement d'un reseau de neuron en utilisant tensorflow.
 #charger les donnees du echantillon SIGNS.
 #Charger les donnes pour faire le train.
-with h5py.File('/home/juan-david/Documents/data_science/travail_personnel/machine_learning/train_signs.h5') as hdf:
+with h5py.File('train_signs.h5') as hdf:
     ls = list(hdf.keys())
     print('List of databases in this file :\n', ls)
     data1 = hdf.get('train_set_x')
@@ -207,7 +207,7 @@ print(dataset1)
 print(dataset2)
 
 #Charger les donnes pour faire le test.
-with h5py.File('/home/juan-david/Documents/data_science/travail_personnel/machine_learning/test_signs.h5') as hdf:
+with h5py.File('test_signs.h5') as hdf:
     ls = list(hdf.keys())
     print('List of databases in this file :\n', ls)
     data3 = hdf.get('test_set_x')
