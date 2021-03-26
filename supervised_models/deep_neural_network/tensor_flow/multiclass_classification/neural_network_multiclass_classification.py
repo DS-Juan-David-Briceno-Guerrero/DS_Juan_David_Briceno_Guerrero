@@ -1,3 +1,10 @@
+#.Welcome to this Machine Learning lesson.
+#.This exercise aims to demonstrate how to build a neural network in tensorflow to address a multiclass classification problem.
+#.The model uses the softmax cross entropy loss to find in the final layer, the probabilities of each class, and then make a classification.
+#The model is trained over a dataset containing images of sign numbers done with hands.
+
+#A.Learn a bit about how to use tensorflow.
+
 #TP d'apprentissage pour en savoir plus sur tensorflow, et son utilisation.
 import math
 import numpy as np
@@ -181,7 +188,7 @@ def ones(shape):
 
 print ("ones = " + str(ones([3])))
 
-
+#B.Application of concepts to develop the neural network model.
 #5.Developpement d'un reseau de neuron en utilisant tensorflow.
 #charger les donnees du echantillon SIGNS.
 #Charger les donnes pour faire le train.
