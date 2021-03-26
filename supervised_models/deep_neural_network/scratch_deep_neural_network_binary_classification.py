@@ -23,7 +23,7 @@ import h5py
 np.random.seed(1)
 
 #1.Importer les fichiers avec les donnees.
-with h5py.File('/home/juan-david/Documents/data_science/travail_personnel/machine_learning/train_catvnoncat.h5') as hdf:
+with h5py.File('train_catvnoncat.h5') as hdf:
     ls = list(hdf.keys())
     print('List of databases in this file :\n', ls)
     data1 = hdf.get('train_set_x')
